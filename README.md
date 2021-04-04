@@ -95,22 +95,23 @@ All Trips will output in the following format:
 There are 3 GET requests:
 
 ```
-GET /api/games/all
+GET /api/trips
 ```
 
-As the title suggests, returns all games in the database
+Returns all trips for user
+
 
 ```
-GET /api/games
+GET /api/trips/:trip_id
 ```
 
-This will return the user's games (user id required through middleware)
+This will return one singular trip based on id
 
 ```
-GET /api/games/:game_id
+DELETE /api/trips/:trip_id
 ```
 
-This will return one singular game based on id
+Deletes a trip based on ID.
 
 ### Plans Endpoints
 
